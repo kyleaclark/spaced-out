@@ -1,0 +1,109 @@
+Time based game.
+	Each object (enemies, powerups, mini bosses, bosses) will appear at a certain
+time after the start of the level.
+	objects will only live for a certain time, before self destructing/leaving the
+screen.
+	Bosses must be beaten, mini bosses may kill them selves, or leave if time
+expires
+	x,y position can be random or pre coded. Usually will be right/top edge of
+screen, depending on scroll direction
+Random enemies
+	Enemies will be added randomly
+
+Ship Class. could also be a struct, with functions that take a struct * as a
+parameter
+	Each ship (player and enemies) will need a x and y coord. X and y velocity. 
+	Sheilds and health. Weapon types and status.
+	Will include functions to update positions, status, ect.
+	Will have collision functions as well.
+
+Background
+	Bitmaps can be used and scrolled. This will allow for us to create land levels
+where you are flying over a planet.
+	A simple starfield can be used as well. This uses less memory, and creates a
+pretty good effect.
+
+Main Game Loop
+	Load up graphic files 
+	Set Up grpahics mode
+	
+	while( ! done )
+	{
+
+                //update data()
+                    //update the movement of all the bullets and items
+
+		Update any on screen bullets
+                //check for player input()
+                      // if(keypressed())
+                           //check what the key is
+                                //if a valid key
+                                     //then do the neccasary action
+ 
+                //get ai decisions() 
+                     //for each enemy ship
+                          //check whether moving, shooting, or nothing is better
+                              //input decision
+
+
+
+		If any ships get hit decrease sheilds/health
+		If any ships die, blow them up
+		IF player dies then set done = true and break out of while loop
+                //check if any collisions have taken place
+                    //decide what collision has taken place and do the action that is supposed to happen
+		
+		Check player input
+		update player velocitys and position
+		if player is shooting, add another bullet
+
+                //redraw everything on the screen()
+
+		update all active enemy positions
+		should the enemies shoot? add any bullets if necessary
+	
+		
+
+		is it time for a boss? if so clear out any enemies and enter the boss
+		if no boss is on screen then randomly check to add any enemies.
+		
+
+	}
+
+			GUNS
+
+-start off with default gun that has unlimited ammo and two special guns that starts off with very little ammo
+-can gain special guns through special items
+-there is only one type of ammo for all of the special guns but it is limited and it comes with the gun you pick up
+-each special gun has a predetermined amount of ammo and can not be increased
+
+special gun 1 - shock wave - kills anything it touches but moves slow and only one can be set off at a time
+              - very little ammo
+special gun 2 - laser beam - same power as default gun but moves twice as fast - moderate amount of ammo
+special gun 3 - missle launcher - very powerful gun but takes a while to shoot off - little ammo
+special gun 4 - sniper gun - has the best "lock on" of all the guns.  get this gun's cross hairs and they will automatically
+                stick onto the ship.  not very fast and only as powerful as the default gun -  average ammo 
+
+			ENEMY SHIPS
+
+ship 1 - looks to move from side to side while shooting when in the middle portion of the screen
+ship 2 - likes to go to the right side of the screen and shoot the whole time while reaching the left side of the screen
+         then once it reaches the left side of the screen (about 3/5 the way down) it will start kamakazi itself into the               
+         player
+ship 3 - if the player goes right this ship goes right (unless unable to) if the player goes left this ship goes left
+         else this ship only moves down and only shoots whenever the player shoots
+ship 4 - this ship is the exact opposite of ship 3 except that it still shoots when the player shoots
+ship 5 - looks to move from side to side while shooting when in the outter portions of the screen
+special ship 1 - only objective is to kamakazi itself into the player (does not shoot)
+special ship 2 - sends a special shock wave through the air that will not matter what take away damage and is unavoidable
+                 however the ship can only let off one wave at a time but the ship is the hardest to kill
+
+
+
+
+Objects for game: 
+
+ health powerup
+ 
+ 
+

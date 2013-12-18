@@ -1,0 +1,20 @@
+[Project]
+FileName=E:\Documents and Settings\Administrator\Desktop\Spaced Out\Project 1.dev
+Name=Project 1
+Use_gpp=1
+UnitCount=4
+ResFiles=E:\Documents and Settings\Administrator\Desktop\Spaced Out\rsrc.rc
+NoConsole=1
+IsDll=0
+Icon=E:\DevCpp\Bin\Mainicon.ico
+[Unit1]
+FileName=E:\Documents and Settings\Administrator\Desktop\Spaced Out\main.cpp
+FileTime=763737843
+[Unit2]
+FileName=E:\Documents and Settings\Administrator\Desktop\Spaced Out\load.h
+[Unit3]
+FileName=E:\Documents and Settings\Administrator\Desktop\Spaced Out\setup.cpp
+FileTime=763737940
+[Unit4]
+FileName=E:\Documents and Settings\Administrator\Desktop\Spaced Out\setup.h
+FileTime=763737778
