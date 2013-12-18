@@ -12,4 +12,5 @@ Created as a personal application.  Play a desktop GUI game of Spaced Out (space
 ##Technologies
 
 C++
+
 Allegro
